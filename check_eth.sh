@@ -8,6 +8,8 @@ if ethtool eth1 | grep -q "Speed: 100Mb/s" && ethtool eth1 | grep -q "Duplex: Fu
 sleep 1
 else
     echo "Not online"
+    ethtool eth1 | grep -q "Speed:"
+    ethtool eth1 | grep -q "Duplex:"
 ethtool -s eth1 speed 100 duplex full autoneg off
 fi
 done
