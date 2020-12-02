@@ -10,7 +10,7 @@ sleep 1
 else
     echo $(date -u) "Not online"
     ethtool eth1 | grep -q "Speed:"
-    ethtool eth1 | grep -q "Duplex:
+    ethtool eth1 | grep -q "Duplex:"
 ethtool -s eth1 speed 100 duplex full autoneg off
 fi
 done
