@@ -1,4 +1,5 @@
 sleep 1
+clear
 echo "script to check eth port is correct on wireless bridges"
 while(true)
 do
