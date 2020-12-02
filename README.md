@@ -9,6 +9,7 @@ opkg install libustream-openssl
 
 create check.sh with the following:
 #!/bin/sh
+sleep 30
 wget -O - https://raw.githubusercontent.com/rmhomecouk/scripts/main/check_eth.sh | sh
 
 
