@@ -1,3 +1,4 @@
+#!/bin/sh
 clear
 sleep 1
 echo $(date -u) "script to check eth port is correct on wireless bridges"
