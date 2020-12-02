@@ -1,15 +1,14 @@
 clear
 sleep 1
-echo "script to check eth port is correct on wireless bridges"
+echo $(date -u) "script to check eth port is correct on wireless bridges"
 while(true)
 do
 if ethtool eth1 | grep -q "Speed: 100Mb/s" && ethtool eth1 | grep -q "Duplex: Full" ; then
-#    echo "Online"
+#    echo $(date -u) "Online"
 sleep 1
 else
-    echo "Not online"
-    ethtool eth1 | grep -q "Speed:"
-    ethtool eth1 | grep -q "Duplex:"
+    echo $(date -u) "Not online"
+    ethtool eth1
 ethtool -s eth1 speed 100 duplex full autoneg off
 fi
 done
