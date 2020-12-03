@@ -6,6 +6,8 @@
 opkg update
 opkg install ethtool
 opkg install nano
+opkg install screen
+opkg install iperf3
 opkg install ca-certificates
 opkg install libustream-openssl
 
