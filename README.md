@@ -4,6 +4,8 @@
 ## check_eth
 
 opkg update
+opkg install ethtool
+opkg install nano
 opkg install ca-certificates
 opkg install libustream-openssl
 
